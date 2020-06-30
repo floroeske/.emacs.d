@@ -1,6 +1,6 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
-(setq default-frame-alist '((font . "Monospace 10")))
+(setq default-frame-alist '((font . "Iosevka Term 11")))
 
 (setq
   ;; better startup
@@ -16,7 +16,7 @@
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-(scroll-bar-mode -1)
+;; (scroll-bar-mode -1)
 
 ;; (load-theme 'flo-one t)
 
