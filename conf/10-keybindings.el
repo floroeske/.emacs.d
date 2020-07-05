@@ -9,6 +9,7 @@
 (global-set-key (kbd "C-c w") 'whitespace-cleanup)
 (global-set-key (kbd "C-c i") 'indent-buffer)
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
+(global-set-key (kbd "M-e") 'eshell)
 
 (global-set-key (kbd "C-x b") 'ivy-switch-buffer)
 (global-set-key (kbd "C-x C-b") 'counsel-switch-buffer)
