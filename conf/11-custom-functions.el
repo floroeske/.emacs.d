@@ -279,7 +279,7 @@
   "open up a guaranteed new scratch buffer"
   (interactive)
   (let (buffer-name)
-    (setq buffer-name (loop for num from 0
+    (setq buffer-name (cl-loop for num from 0
                             for name = (format "*scratch-%03i*" num)
                             while (get-buffer name)
                             finally return name))
@@ -293,7 +293,7 @@
   "open up a guaranteed new note buffer"
   (interactive)
   (let (buffer-name)
-    (setq buffer-name (loop for num from 0
+    (setq buffer-name (cl-loop for num from 0
                             for name = (format "*note-%03i*" num)
                             while (get-buffer name)
                             finally return name))
@@ -351,3 +351,14 @@ as input."
   ;; move cursor to eol
   (end-of-line)
   )
+
+(defun custom/occur-word-or-region ()
+  "Occur for word or region"
+  (interactive)
+  (let (pos1 pos2 bds)
+    (if (and transient-mark-mode mark-active)
+        (setq pos1 (region-beginning) pos2 (region-end))
+      (progn
+        (setq bds (bounds-of-thing-at-point 'symbol))
+        (setq pos1 (car bds) pos2 (cdr bds))))
+    (occur (buffer-substring-no-properties  pos1 pos2))))

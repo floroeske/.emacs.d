@@ -8,13 +8,16 @@
 (global-set-key (kbd "C-c j") 'join-line)
 (global-set-key (kbd "C-c w") 'whitespace-cleanup)
 (global-set-key (kbd "C-c i") 'indent-buffer)
-(global-set-key (kbd "C-x k") 'kill-this-buffer)
+;; (global-set-key (kbd "C-x k") 'kill-this-buffer)
 (global-set-key (kbd "M-e") 'eshell)
+(global-set-key (kbd "M-o") 'other-window)
+(global-set-key (kbd "C-c o") 'custom/occur-word-or-region)
+(global-set-key (kbd "C-S-s") 'isearch-forward-symbol-at-point)
 
 (global-set-key (kbd "C-x b") 'ivy-switch-buffer)
 (global-set-key (kbd "C-x C-b") 'counsel-switch-buffer)
 (global-set-key (kbd "C-x C-r") 'counsel-recentf)
-(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+;; (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 
 (global-set-key [(control f3)] 'highlight-symbol)
 (global-set-key [f3] 'highlight-symbol-next)

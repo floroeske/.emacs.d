@@ -87,3 +87,5 @@
   (widget-insert "\n")
   (use-local-map widget-keymap)
   (widget-setup))
+
+(widget-example)
