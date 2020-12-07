@@ -19,11 +19,11 @@
 (global-set-key (kbd "C-x C-r") 'counsel-recentf)
 ;; (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 
-(global-set-key [(control f3)] 'highlight-symbol)
-(global-set-key [f3] 'highlight-symbol-next)
-(global-set-key [(shift f3)] 'highlight-symbol-prev)
-(global-set-key [(meta f3)] 'highlight-symbol-query-replace)
-(global-set-key [(control f4)] 'highlight-symbol-remove-all)
+(global-set-key (kbd "C-1") 'highlight-symbol)
+(global-set-key (kbd "C-4") 'highlight-symbol-next)
+(global-set-key (kbd "C-3") 'highlight-symbol-prev)
+(global-set-key (kbd "C-5") 'highlight-symbol-query-replace)
+(global-set-key (kbd "C-2") 'highlight-symbol-remove-all)
 
 (global-set-key [M-up] (lambda () (interactive) (scroll-down 1)))
 (global-set-key [M-down] (lambda () (interactive) (scroll-up 1)))
