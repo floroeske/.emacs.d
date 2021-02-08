@@ -1,6 +1,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
-(setq default-frame-alist '((font . "Iosevka Term 11")))
+;; (setq default-frame-alist '((font . "Iosevka Term 11")))
+(setq default-frame-alist '((font . "Ubuntu Mono 12")))
 
 (setq
   ;; better startup

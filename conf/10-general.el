@@ -46,3 +46,8 @@
 (setq whitespace-global-modes
       '(not magit-mode git-commit-mode))
 (setq whitespace-style '(face trailing tabs))
+
+;; allow remembering risky variables
+(defun risky-local-variable-p (sym &optional _ignored) nil)
+;; Then it'll only re-confirm when you edit one.
+;; You can also do (advice-add 'risky-local-variable-p :override #'ignore), whi

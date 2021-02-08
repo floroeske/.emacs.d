@@ -362,3 +362,15 @@ as input."
         (setq bds (bounds-of-thing-at-point 'symbol))
         (setq pos1 (car bds) pos2 (cdr bds))))
     (occur (buffer-substring-no-properties  pos1 pos2))))
+
+(defun custom/vertical-splitting ()
+  "Adjust splitting for vertical screen"
+  (interactive)
+  (setq split-height-threshold 200)
+  (setq split-width-threshold nil))
+
+(defun custom/horizontal-splitting ()
+  "Adjust splitting for horizontal screen"
+  (interactive)
+  (setq split-height-threshold nil)
+  (setq split-width-threshold 200))
