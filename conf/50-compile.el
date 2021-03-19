@@ -31,7 +31,7 @@
                       (switch-to-prev-buffer (get-buffer-window buf) 'kill))
                     buffer)))
 
-(add-hook 'compilation-finish-functions 'bury-compile-buffer-if-successful)
+;; (add-hook 'compilation-finish-functions 'bury-compile-buffer-if-successful)
 
 ;; custom message after compilation is finished
 ;; (defun my-compilation-finish-function (buffer desc)
