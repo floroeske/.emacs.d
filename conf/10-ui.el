@@ -19,6 +19,9 @@
 (tool-bar-mode -1)
 ;; (scroll-bar-mode -1)
 
+(use-package modus-themes
+  :ensure t)
+
 (load-theme 'modus-operandi t)
 
 ;; When running emacs as daemon.
