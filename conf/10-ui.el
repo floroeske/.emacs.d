@@ -12,8 +12,7 @@
   ;; disable anoying beep
   ring-bell-function 'ignore
   ;; improve rendering performance
-  redisplay-dont-pause t
-)
+  redisplay-dont-pause t)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)

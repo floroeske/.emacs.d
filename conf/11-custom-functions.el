@@ -374,3 +374,14 @@ as input."
   (interactive)
   (setq split-height-threshold nil)
   (setq split-width-threshold 200))
+
+(defun insert-current-date (&optional omit-day-of-week-p)
+  "Insert today's date using the current locale.
+  With a prefix argument, the date is inserted without the day of
+  the week."
+  (interactive "P*")
+  (insert (calendar-date-string (calendar-current-date) nil
+                                omit-day-of-week-p)))
+(defun datetime ()
+  (interactive)
+  (insert (format-time-string "%Y-%m-%d %H:%M:%S")))
