@@ -25,6 +25,9 @@
 (global-set-key (kbd "C-5") 'highlight-symbol-query-replace)
 (global-set-key (kbd "C-2") 'highlight-symbol-remove-all)
 
+(global-set-key (kbd "M-/") 'delete-horizontal-space)
+(global-set-key (kbd "M-SPC") 'just-one-space)
+
 (global-set-key [M-up] (lambda () (interactive) (scroll-down 1)))
 (global-set-key [M-down] (lambda () (interactive) (scroll-up 1)))
 
