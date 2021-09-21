@@ -51,3 +51,5 @@
 (defun risky-local-variable-p (sym &optional _ignored) nil)
 ;; Then it'll only re-confirm when you edit one.
 ;; You can also do (advice-add 'risky-local-variable-p :override #'ignore), whi
+
+(add-hook 'text-mode-hook 'turn-on-visual-line-mode)
