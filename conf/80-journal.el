@@ -19,5 +19,6 @@
       (insert "** How Am I feeling?\n")
       (insert "** What's Something Good That Happened Today?\n")
       (insert "** What Did I Do Well?\n")
-      (insert "** What Could I Have Done Better?\n"))
-    (goto-char (point-max))))
+      (insert "** What Could I Have Done Better?\n")
+      (insert "* Additional Thoughts\n"))
+  (goto-char (point-max))))
