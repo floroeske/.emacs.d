@@ -21,7 +21,7 @@
 (use-package modus-themes
   :ensure t)
 
-;; (load-theme 'modus-operandi t)
+(load-theme 'modus-operandi t)
 
 ;; When running emacs as daemon.
 ;;
