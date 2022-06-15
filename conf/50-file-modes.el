@@ -18,3 +18,6 @@
 
 (setq auto-mode-alist (append '(("\\.FCMacro$" . python-mode))
                               auto-mode-alist))
+
+(setq auto-mode-alist (append '(("\\.bb$" . bitbake-mode))
+                              auto-mode-alist))
