@@ -37,3 +37,6 @@
 ;;   :ensure t
 ;;   :hook (after-init . doom-modeline-mode))
 ;; (setq doom-modeline-height 16)
+
+;; enable toolbar icons (only necessary on kde?)
+(setq tool-bar-style 'both)
