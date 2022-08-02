@@ -1,7 +1,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;; (setq default-frame-alist '((font . "Iosevka Medium 12")))
-;; (setq default-frame-alist '((font . "Ubuntu Mono 12")))
+;; (setq default-frame-alist '((font . "Ubuntu Mono 14")))
 
 (setq
   ;; better startup
@@ -39,4 +39,4 @@
 ;; (setq doom-modeline-height 16)
 
 ;; enable toolbar icons (only necessary on kde?)
-(setq tool-bar-style 'both)
+(setq tool-bar-style 'image)

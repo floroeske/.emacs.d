@@ -16,6 +16,9 @@
 (setq auto-mode-alist (append '(("\\.ino$" . c++-mode))
                               auto-mode-alist))
 
+(setq auto-mode-alist (append '(("\\.ipp$" . c++-mode))
+                              auto-mode-alist))
+
 (setq auto-mode-alist (append '(("\\.FCMacro$" . python-mode))
                               auto-mode-alist))
 

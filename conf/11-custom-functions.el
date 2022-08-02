@@ -310,8 +310,6 @@
   (save-some-buffers)
   (kill-emacs))
 
-(defalias 'shutdown 'custom/server-shutdown)
-
 (defun custom/revert-buffer-no-confirm ()
   "Revert buffer without confirmation."
   (interactive)

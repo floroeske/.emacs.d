@@ -1,3 +1,7 @@
+;; Prevent me from closing the window all the time
+(global-unset-key (kbd "C-x C-c"))
+
+;; Add key bindings
 (global-set-key (kbd "C-<return>") 'custom/insert-new-line)
 (global-set-key (kbd "C-a") 'custom/smart-move-beginning-of-line)
 (global-set-key (kbd "C-c d") 'custom/duplicate-current-line-or-region)
