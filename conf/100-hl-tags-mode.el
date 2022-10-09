@@ -26,7 +26,7 @@
 ;;   (require 'hl-tags-mode)
 ;;   (add-hook 'sgml-mode-hook (lambda () (hl-tags-mode 1)))
 ;;   (add-hook 'nxml-mode-hook (lambda () (hl-tags-mode 1)))
-          
+
 ;;; Code:
 
 (eval-when-compile (require 'cl))
@@ -65,7 +65,7 @@
                        ('close
                         (goto-char (sgml-tag-start ctx))
                         (cons (hl-tags-sgml-get-context) ctx))
-                       ('open 
+                       ('open
                         (goto-char (sgml-tag-start ctx))
                         (sgml-skip-tag-forward 1)
                         (backward-char 1)
@@ -125,7 +125,7 @@ boundaries of the current start and end tag , or nil."
   "Toggle hl-tags-mode."
   nil "" nil
   (if hl-tags-mode
-      (progn 
+      (progn
         (add-hook 'post-command-hook 'hl-tags-update nil t)
         (add-hook 'change-major-mode-hook 'hl-tags-hide nil t))
     (remove-hook 'post-command-hook 'hl-tags-update t)
