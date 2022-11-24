@@ -68,4 +68,4 @@
               (save-excursion (insert "#+END_" choice))))))))))
 
 ;; Enable visible-mode after loading org mode to show all content
-(add-hook 'org-mode-hook 'visible-mode)
+;; (add-hook 'org-mode-hook 'visible-mode)
