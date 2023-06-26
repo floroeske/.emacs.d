@@ -24,7 +24,6 @@
 ;; enable y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
-
 ;; Reload file without asking when changed externally
 (global-auto-revert-mode t)
 

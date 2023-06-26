@@ -60,7 +60,7 @@
     (when (looking-at "<") (forward-char 1))
     (let* ((ctx (hl-tags-sgml-get-context))
            (boundaries
-            (and ctx (case (sgml-tag-type ctx)
+            (and ctx (cl-case (sgml-tag-type ctx)
                        ('empty (cons ctx nil))
                        ('close
                         (goto-char (sgml-tag-start ctx))
@@ -123,7 +123,7 @@ boundaries of the current start and end tag , or nil."
 
 (define-minor-mode hl-tags-mode
   "Toggle hl-tags-mode."
-  nil "" nil
+  :init-value nil :lighter "" :keymap nil
   (if hl-tags-mode
       (progn
         (add-hook 'post-command-hook 'hl-tags-update nil t)

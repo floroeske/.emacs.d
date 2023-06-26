@@ -1,8 +1,3 @@
-;; (unless (and (fboundp 'server-running-p)
-;;              (server-running-p))
-;;   (server-start))
-
-
 ;; emacsclient filename:linenumber:position
 (defadvice server-visit-files (before parse-numbers-in-lines (files proc &optional nowait) activate)
   "looks for filenames like file:line or file:line:position and reparses name in such manner that position in file"
@@ -15,5 +10,4 @@
                                (cons (string-to-number (match-string 2 name))
                                      (string-to-number (or (match-string 3 name) "")))
                                )
-                            fn))) files))
-  )
+                            fn))) files)))
