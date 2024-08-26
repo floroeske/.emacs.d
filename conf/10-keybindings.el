@@ -23,6 +23,9 @@
 (global-set-key (kbd "C-x C-r") 'counsel-recentf)
 ;; (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 
+(global-set-key (kbd "C-z") 'undo-tree-visualize)
+(global-set-key (kbd "C-x C-c f") 'set-frame-font)
+
 (global-set-key (kbd "C-1") 'highlight-symbol)
 (global-set-key (kbd "C-4") 'highlight-symbol-next)
 (global-set-key (kbd "C-3") 'highlight-symbol-prev)
