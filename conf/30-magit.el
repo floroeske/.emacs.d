@@ -8,3 +8,12 @@
 ;; (setq magit-diff-highlight-hunk-body nil)
 ;; (setq magit-diff-refine-hunk nil)
 (setq magit-refresh-status-buffer nil)
+
+(setq magit-status-headers-hook '(magit-insert-error-header
+                                  magit-insert-diff-filter-header
+                                  magit-insert-head-branch-header
+                                  magit-insert-upstream-branch-header
+                                  magit-insert-push-branch-header
+                                  magit-insert-tags-header
+                                  magit-insert-user-header
+                                  magit-insert-remote-header))
