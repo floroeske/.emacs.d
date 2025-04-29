@@ -14,3 +14,4 @@
 (load (concat user-emacs-directory "load-directory"))
 (load-directory (concat user-emacs-directory "conf"))
 (put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
