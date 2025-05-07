@@ -18,7 +18,11 @@
 (use-package modus-themes
   :ensure t)
 
-(load-theme 'modus-operandi-tinted t)
+(use-package standard-themes
+  :ensure t)
+
+;; (load-theme 'modus-operandi-tinted t)
+(load-theme 'standard-dark t)
 
 ;; When running emacs as daemon.
 ;;
