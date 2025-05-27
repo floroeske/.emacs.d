@@ -397,3 +397,15 @@ as input."
   (or (looking-at "[0-9]+")
       (error "No number at point"))
   (replace-match (number-to-string (1- (string-to-number (match-string 0))))))
+
+(defun filename-to-clipboard ()
+  "Put the current file name on the clipboard"
+  (interactive)
+  (let ((filename (if (equal major-mode 'dired-mode)
+                      default-directory
+                    (buffer-file-name))))
+    (when filename
+      (with-temp-buffer
+        (insert filename)
+        (clipboard-kill-region (point-min) (point-max)))
+      (message filename))))
