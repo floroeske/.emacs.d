@@ -15,14 +15,16 @@
 ;; (tool-bar-mode -1)
 ;; (scroll-bar-mode -1)
 
+
 (use-package modus-themes
   :ensure t)
 
-(use-package standard-themes
-  :ensure t)
+;;(use-package standard-themes
+;;  :ensure t)
 
-;; (load-theme 'modus-operandi-tinted t)
-(load-theme 'standard-dark t)
+(load-theme 'modus-operandi t)
+
+(setq custom-safe-themes t)  ; trust ALL themes, no hash-checking at all
 
 ;; When running emacs as daemon.
 ;;
